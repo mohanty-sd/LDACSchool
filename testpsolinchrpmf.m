@@ -14,7 +14,7 @@ fs = 2048;
 sigLen = 0.25;
 f0 = 384;%Hz
 f1 = 39;%Hz^2
-snr = 20;
+snr = 10;
 [dataVec,timeVec]=genlinchrpwgndata(nSamples,fs,snr,f0,f1,pi/3.3,0.3,sigLen);
 %% Spectrogram of data realization
 [S,F,T]=spectrogram(dataVec,64,63,[],2048);
